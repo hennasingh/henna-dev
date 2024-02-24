@@ -1,7 +1,63 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/**
+** HEADER STYLES
+*/
+
+header {
+  display: flex;
+  gap:1em;
+  align-items: center;
+  margin:1.2em 0.8em;
+}
+
+header p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header-logo {
+  width:70px;
+  height:70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap:1em;
+}
+
+nav li {
+  text-transform: uppercase;
+}
+
+nav {
+  margin-left: auto;
+}
+
+/**
+** HEADER MEDIA QUERY
+*/
+
+@media (min-width: 700px) {
+  header {
+    gap: 1.2em;
+    margin: 1.2em 2em;
+  }
+
+  header p {
+    font-size: larger;
+  }
+
+  nav ul {
+    font-weight: bold;
+    gap: 1.2em;
+  }
+}
