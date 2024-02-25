@@ -1,5 +1,18 @@
-#root {
-  max-width: 1280px;
+* {
+  --n-blue: 0, 98, 185;
+  --blue: rgba(0, 98, 185, 0.8);
+  --red: red;
+  --purple: rgba(143, 162, 255, 0.8);
+  --green: rgba(31, 79, 45, 0.8);
+  --light-green: rgba(101, 146, 74, 0.8);
+  --brown: rgba(129, 104, 8, 0.8);
+  --light-brown: rgba(186, 155, 65, 0.8);
+  --main-color:  var(--n-blue);
+}
+
+body {
+  margin:0 auto;
+  padding:0;
 }
 
 :root {
@@ -34,10 +47,6 @@ nav ul {
   gap:1em;
 }
 
-nav li {
-  text-transform: uppercase;
-}
-
 nav {
   margin-left: auto;
 }
@@ -59,5 +68,70 @@ nav {
   nav ul {
     font-weight: bold;
     gap: 1.2em;
+    text-transform: uppercase;
   }
 }
+
+/*
+** HOME PAGE
+* subtle-prism from 
+* <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a>
+*/
+
+.home-hero {
+  color: #fff;
+  background: url(./assets/subtle-prism.svg);
+  background-position: center;
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
+}
+
+.home-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding:0.8em;
+}
+
+.hero-heading{
+  font-size:2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-body {
+  margin: 3em auto 0 auto;
+  max-width: 80rem;
+}
+
+.hero-text {
+ text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  width:100%;
+}
+
+.projects-btn {
+  background-color: #fff;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor:pointer;
+  margin-top: 4em;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.projects-btn:hover {
+  transform: translateY(-3px); 
+}
+
+
