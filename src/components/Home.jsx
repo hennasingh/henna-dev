@@ -10,7 +10,7 @@ export default function Home() {
                     <p className='hero-text'>
                         I am a passionate technical <span>community builder,</span>  educator, writer, 
                       <span> speaker, developer</span> and a continuous learner based in Dublin, Ireland.
-                        Currently, leveling up my knowledge in <span>React JS</span> and <span>Tailwind CSS</span> 
+                        Currently, building web solutions in <span>React JS</span> , HTML, CSS, and <span> Firebase </span> 
                         to transition to a front-end developer role.
                     </p>
                 </div>

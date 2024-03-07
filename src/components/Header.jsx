@@ -1,20 +1,25 @@
 import React from 'react'
 import logo from '../assets/thumbnail.jpeg'
+import {RiCloseLine, RiMenu3Line} from 'react-icons/ri'
 
 export default function Header() {
+
+    const Menu = () => (
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    )
 
     return (
         <header>
             <img className="header-logo"src={logo} alt="thumbnail of henna singh" />
-            <p>Henna Singh</p>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+            <p>Henna Singh</p>   
+            <Menu /> 
         </header>
     )
 }
