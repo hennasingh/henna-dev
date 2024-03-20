@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home() {
 
     return (
-        <section className='home-hero'>
+        <section className='home-hero' id="home">
             <div className='home-hero-content'>
                 <h1 className='hero-heading'>Hey, Welcome to my Creative Nook!</h1>
                 <div className='hero-body'>

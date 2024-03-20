@@ -23,7 +23,7 @@ export default function Projects() {
    })
 
     return (
-        <section className="sec-projects">
+        <section className="sec-projects" id="projects">
             <div className="container">
                 <h1>Projects</h1>
                 <p>All my projects include links to the code and live version. 
