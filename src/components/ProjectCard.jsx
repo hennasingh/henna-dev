@@ -27,8 +27,8 @@ export default function ProjectCard({props}) {
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <div className='links'>
-                    <a href={githubUrl}>Code Link</a>
-                    <a href={projectUrl}>Live Link</a>
+                    <a href={githubUrl} target="_blank">Code Link</a>
+                    <a href={projectUrl} target="_blank">Live Link</a>
                 </div>
             </div>
 

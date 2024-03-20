@@ -5,10 +5,10 @@ export default function Contact() {
     return (
         <section className="sec-contact" id="contact">
             <div className="container">
-                <h1>Contact</h1>
+                <h1>Get in Touch</h1>
                 <p>
-                    Please reach out if you have any questions! I am happy to jump on a call
-                    to brainstorm project ideas or collaborate together.
+                    I am happy to jump on a call to brainstorm project ideas, collaborate together, or
+                    just random coffee talks ;). Send me an email at hennasingh04[at]gmail[dot]com.
                 </p>
             </div>
         </section>
