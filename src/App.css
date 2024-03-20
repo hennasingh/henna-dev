@@ -348,6 +348,15 @@ section {
     }
 
     .sec-about {
+
+      .container {
+
+        max-width: 70em;
+
+        p {
+          max-width: 60em;
+        }
+      }
       
       .about {
         display:grid;
