@@ -2,6 +2,7 @@
 body {
   margin:0 auto;
   padding:0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -32,16 +33,15 @@ header {
   }
 
   nav {
-    margin-left: auto;
     cursor: pointer;
 
     ul {
       list-style-type: none;
       display:flex;
-      gap: 1em;
 
       li {
         padding:0.8em 0;
+        margin-right: 1em;
 
         a{
           text-decoration: none;
@@ -72,8 +72,11 @@ header {
       color:#333;
     }
 
+    nav {
+      margin-left: auto;
+    }
+
     nav ul {
-      font-weight: bold;
       font-size:1.2rem;
       display: flex;
       justify-content: space-around;
@@ -100,6 +103,7 @@ header {
   color: #fff;
   background: url(./assets/subtle-prism.svg);
   background-position: center;
+  padding:1.2em;
   height: 100vh;
 }
 
@@ -108,8 +112,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  height: 60vh;
   padding:0.8em;
+  margin-top:5em;
 }
 
 .hero-heading{
@@ -117,12 +122,12 @@ header {
   font-weight: bold;
   text-align: center;
   letter-spacing: 3px;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
 .hero-body {
   margin: 3em auto 0 auto;
-  max-width: 80rem;
 }
 
 /* Keyframes for the shimmer effect */
@@ -218,7 +223,7 @@ section {
     align-items: center;
 
     img {
-       width:450px;
+       width:25rem;
        margin-bottom: 2em;
     }
 
@@ -318,6 +323,7 @@ section {
       h1 {
       color: #fff;
       text-align: center;
+      border: none;
       }
 
       p {
