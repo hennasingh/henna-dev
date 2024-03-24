@@ -127,13 +127,17 @@ header {
 
 /* Keyframes for the shimmer effect */
 @keyframes shimmer {
-  0% {
-    background-position: -150% 0;
+  0%, 100% {
+    background-position: -50%;
   }
-  100% {
-    background-position: 150% 0;
+  50% {
+    background-position: 150%;
+  }
+  25%, 75% {
+    background-position: 100%;
   }
 }
+
 
 .hero-text {
  text-align: center;
@@ -143,9 +147,14 @@ header {
 
   span {
     /* Apply the animation to all span elements */
-    animation: shimmer 3s infinite linear;
+    animation: shimmer 4s infinite linear;
     color: transparent; /* Hide the text color */
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 139, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(
+      to right,
+      #EA035E 20%,
+      #fff 40%,
+      #EA035E 60%
+    );
     background-clip: text;
     -webkit-background-clip: text; /* For Safari */
     background-size: 200% 100%;
@@ -302,23 +311,59 @@ section {
     color: #fff;
     background: url(./assets/subtle-prism.svg);
     background-position: center;
-    height: 30vh;
+    height: 100%;
 
     .container {
     
       h1 {
       color: #fff;
+      text-align: center;
       }
 
       p {
         max-width:40em;
       }
-    }
-    
 
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3em;
+
+      input {
+        border: 1px solid white;
+        background-color: #00A4E5;
+        color: white;
+        padding: 0.8em 1.2em;
+        }
+        input::placeholder {
+          color:white;
+        }
+
+        textarea {
+          border: 1px solid white;
+          background-color: #00A4E5;
+          color:white;
+          padding: 1em;
+        }
+        
+        textarea::placeholder {
+          color:white;
+        }
+
+        button {
+          padding: 1em 3em;
+          border:1px solid white;
+          background-color: #00A4E5;
+          color:white;
+          font-size: large;
+        }
+      }
+    }
   }
+
+
   /** 
-    MEDIA QUERY (ABOUT & PROJECT)
+    MEDIA QUERY (ABOUT & PROJECT & CONTACT)
   *
   */
 
@@ -369,6 +414,33 @@ section {
         }
       }
     }
+
+    .sec-contact {
+
+      .container {
+
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        div {
+          max-width:40em;
+        }
+
+        form {
+          width:30%;
+        }
+
+        h1 {
+          border: none;
+          text-align: end;
+          margin-right: 2em;
+        }
+        p {
+          text-align: end;
+        }
+      }
+    }
   
   }
 
@@ -395,7 +467,7 @@ section {
     width:50px;
     }
   }
- }
+}
 
  @media (min-width:756px) {
 

@@ -15,19 +15,19 @@ export default function Footer() {
                 </div>
                 <div className="socials">
                     <a href="https://github.com/hennasingh" target='_blank'>
-                        <FaGithub className='icon'/>
+                        <FaGithub className='icon' size={24}/>
                     </a>
                     <a href="www.linkedin.com/in/hennasingh" target='_blank'>
-                        <FaLinkedin className='icon' />
+                        <FaLinkedin className='icon' size={24} />
                     </a>
                     <a href="https://twitter.com/henna_dev" target='_blank'>
-                        <FaXTwitter className='icon' />
+                        <FaXTwitter className='icon' size={24} />
                     </a>
                     <a href="https://hennasingh.medium.com/" target='_blank'>
-                        <RiMediumFill className='icon' />
+                        <RiMediumFill className='icon' size={24} />
                     </a>
                     <a href="https://codelady.hashnode.dev/" target='_blank'>
-                        <FaHashnode className='icon'/>
+                        <FaHashnode className='icon' size={24}/>
                     </a>
                 </div>
             </div>
