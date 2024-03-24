@@ -209,6 +209,7 @@ header {
       width:40%;
       display: block;
       border-radius: 8px;
+      margin-right: 2em;;
       box-shadow: 6px 6px 18px 4px #EA035E;
     }
   }
