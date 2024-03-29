@@ -7,7 +7,8 @@ export default function About() {
             <div className='container'>
                 <h1>About Me</h1>
                 <p>
-                    I enjoy building dynamic web applications utilizing HTML, CSS, and JavaScript,
+                    I work as Program Manager at MongoDB, where I enjoy fostering relationships with programming communities. 
+                    Recently I am enjoying building dynamic web applications utilizing HTML, CSS, and JavaScript,
                     creating responsive and user-friendly interfaces. Currently, playing with React to 
                     develop more interactive and stateful user experiences, as well as Firebase for its 
                     powerful backend services, aiming to broaden my repertoire in full-stack development.
