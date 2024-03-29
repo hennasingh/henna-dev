@@ -13,11 +13,19 @@ body {
 ** HEADER STYLES
 */
 
-header {
+.header-container {
   display: flex;
   gap:1em;
   align-items: center;
+  justify-content: space-between;
   margin:1.2em 0.8em;
+
+  div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
 
   .header-logo {
     width:70px;
@@ -32,29 +40,33 @@ header {
     color:#333;
   }
 
-  nav {
+  nav .ul-item {
     cursor: pointer;
+    position: absolute;
+    list-style-type: none;
+    top:80px;
+    right: 10px;
+    z-index: 100;
+    width:130px;
+    background-color:#fffa;
 
     ul {
-      list-style-type: none;
-      display:flex;
-
+      
       li {
         padding:0.8em 0;
-        margin-right: 1em;
+        text-align: center;        
 
         a{
           text-decoration: none;
-          color:#333
+          color:#333;
+          transition: border-bottom 0.3s ;
+        }
+        a:hover {
+          border-bottom: 1px solid #333;
+          color:#EA035E;
         }
       }
     }
-  }
-
-
-  .nav-menu {
-    margin-left: 1rem;
-    position: relative;
   }
 }
 
@@ -74,6 +86,7 @@ header {
 
     nav {
       margin-left: auto;
+      display: flex;
     }
 
     nav ul {
@@ -83,12 +96,6 @@ header {
       gap: 1.2em;
       text-transform: uppercase;
       margin:0 1em 0 0;
-    }
-
-    .nav-menu {
-      margin-left: 1rem;
-      position: relative;
-      display:none;
     }
   }
 }
@@ -281,11 +288,15 @@ section {
       font-size: larger;
       border-radius: 4px;
       border: none;
-      background-color: #00A4E5 ;
+      background-color: #EA035E ;
       color: white;
       text-decoration: none;
       margin:1em 0;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
       
+    }
+    a:hover {
+      transform: translateY(-3px); 
     }
   }
 }
@@ -331,6 +342,11 @@ section {
       background-color: lightgray;
       padding: 1em 2em;
       border-radius: 8px;
+      transition: background-color 0.4s;
+    }
+    li:hover {
+      background-color:#fafafa ;
+      border:1px solid #EA035E;
     }
   }
 
@@ -408,7 +424,8 @@ section {
       .project-container {
         flex-direction: row;
         gap: 1em;
-        margin:2em;
+        margin:3em auto;
+        max-width: 70em;
 
         img {
           width:60%;
@@ -501,10 +518,16 @@ section {
     a {
       text-decoration: none;
       color: inherit;
+      
     }
 
   .icon{
     width:50px;
+    transition: transform 0.4s ease;
+    }
+    .icon:hover {
+      transform: scale(1.2);
+      border-bottom: 1px solid #EA035E;
     }
   }
 }

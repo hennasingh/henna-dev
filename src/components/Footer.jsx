@@ -17,7 +17,7 @@ export default function Footer() {
                     <a href="https://github.com/hennasingh" target='_blank'>
                         <FaGithub className='icon' size={24}/>
                     </a>
-                    <a href="www.linkedin.com/in/hennasingh" target='_blank'>
+                    <a href="https://linkedin.com/in/hennasingh" target='_blank'>
                         <FaLinkedin className='icon' size={24} />
                     </a>
                     <a href="https://twitter.com/henna_dev" target='_blank'>
