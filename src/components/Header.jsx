@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header>
       <div className="header-container">
-        <div>
+        <div className="logo-div">
           <img
             className="header-logo"
             src={logo}
