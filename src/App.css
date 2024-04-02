@@ -5,7 +5,10 @@ body {
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
 }
 
 /**
@@ -40,9 +43,10 @@ body {
   }
 
   p {
-    font-weight: bold;
     text-transform: uppercase;
-    color: #333;
+    color: #ea035e;
+    font-weight: 900;
+    font-size: 1.4rem;
   }
 
   nav {
@@ -63,6 +67,10 @@ body {
         text-align: center;
         background-color: #fff;
 
+        &:hover {
+          background-color: pink;
+        }
+
         a {
           text-decoration: none;
           color: #333;
@@ -70,8 +78,7 @@ body {
           text-align: center;
         }
         a:hover {
-          border-bottom: 1px solid #333;
-          color: #ea035e;
+          color: #fafafa;
         }
       }
     }
@@ -98,7 +105,6 @@ body {
   .header-container {
     p {
       font-size: 1.4rem;
-      color: #333;
     }
 
     .item-lscreen {
@@ -118,10 +124,12 @@ body {
         text-decoration: none;
         transition: border-bottom 0.3s;
         text-align: center;
+        color: #ea035e;
 
         &:hover {
-          border-bottom: 1px solid #333;
-          color: #ea035e;
+          background-color: pink;
+          padding: 0.3em 0.8em;
+          border-radius: 6px;
         }
       }
     }
@@ -143,8 +151,8 @@ body {
   background: url(./assets/subtle-prism.svg);
   background-position: center;
   padding: 0.6em;
-  height: 100%;
-  margin-top: 2em;
+  height: 100vh;
+  display: flex;
 }
 
 .home-hero-content {
@@ -226,7 +234,8 @@ body {
   letter-spacing: 2px;
   border-radius: 10px;
   text-decoration: none;
-  color: #333;
+  color: #ea035e;
+  font-family: inherit;
   font-weight: bold;
   cursor: pointer;
   margin-top: 3em;
@@ -242,7 +251,7 @@ body {
 * MEDIA QUERY - HERO 
 */
 
-@media (min-width: 756px) {
+@media (min-width: 1000px) {
   .home-hero-content {
     flex-direction: row;
 
@@ -271,7 +280,7 @@ section {
     h1 {
       font-size: 2rem;
       letter-spacing: 2px;
-      color: #333;
+      color: #ea035e;
       padding-bottom: 0.4em;
       border-bottom: 1px solid #333;
       text-transform: uppercase;
@@ -292,6 +301,8 @@ section {
     justify-content: center;
     align-items: center;
     padding: 0 1.3em;
+    margin-top: 1.3em;
+    padding: 0 4rem;
 
     img {
       width: 100%;
@@ -358,7 +369,7 @@ section {
 
     p {
       line-height: 1.7;
-      text-align: left;
+      text-align: center;
     }
     h2 {
       padding-bottom: 1.2em;
@@ -411,32 +422,35 @@ section {
       gap: 1.3em;
 
       input {
-        border: 1px solid white;
-        background-color: #00a4e5;
-        color: white;
+        color: #00a4e5;
         padding: 0.8em 1.2em;
       }
       input::placeholder {
-        color: white;
+        color: #00a4e5;
       }
 
       textarea {
-        border: 1px solid white;
-        background-color: #00a4e5;
-        color: white;
+        color: #00a4e5;
         padding: 1em;
       }
 
       textarea::placeholder {
-        color: white;
+        color: #00a4e5;
       }
 
       button {
         padding: 1em 3em;
-        border: 1px solid white;
-        background-color: #00a4e5;
-        color: white;
-        font-size: large;
+        color: #00a4e5;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        font-weight: 900;
+        cursor: pointer;
+        background-color: #fff;
+        border: none;
+
+        &:hover {
+          box-shadow: 0 5px 15px 3px #ea035e;
+        }
       }
     }
   }
@@ -447,7 +461,7 @@ section {
   *
   */
 
-@media (min-width: 756px) {
+@media (min-width: 1000px) {
   section {
     .project-container {
       flex-direction: row;
@@ -482,6 +496,7 @@ section {
 
       p {
         max-width: 60em;
+        text-align: left;
       }
     }
 
