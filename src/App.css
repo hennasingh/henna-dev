@@ -178,6 +178,20 @@ body {
   letter-spacing: 3px;
   line-height: 1.4;
   text-transform: uppercase;
+
+  span {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 0.2em;
+      width: 80%;
+      bottom: 0.1em;
+      z-index: 1;
+      background: #ea035e;
+    }
+  }
 }
 
 .hero-text {

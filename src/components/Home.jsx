@@ -6,7 +6,9 @@ export default function Home() {
     <section className="home-hero" id="home">
       <div className="home-hero-content">
         <div>
-          <h1 className="hero-heading">Hey, Welcome to my Creative Nook!</h1>
+          <h1 className="hero-heading">
+            Hey, Welcome to my <span>Creative</span> Nook!
+          </h1>
           <p className="hero-text">
             I am a passionate technical <span>community builder,</span>{" "}
             educator, writer,
