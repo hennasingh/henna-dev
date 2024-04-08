@@ -2,7 +2,6 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  position: relative;
 }
 
 :root {
@@ -277,9 +276,18 @@ section {
       font-size: 2rem;
       letter-spacing: 2px;
       color: #333;
-      padding-bottom: 0.4em;
-      border-bottom: 1px solid #333;
       text-transform: uppercase;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 0.2em;
+        width: 80%;
+        bottom: 0.1em;
+        z-index: -1;
+        background: #ea035e;
+      }
     }
 
     p {
@@ -355,6 +363,12 @@ section {
     margin: 0 auto;
     padding: 2em;
 
+    h1 {
+      &:before {
+        z-index: 1;
+      }
+    }
+
     h2 {
       text-align: center;
       letter-spacing: 0.2rem;
@@ -408,6 +422,11 @@ section {
       color: #fff;
       text-align: center;
       border: none;
+
+      &:before {
+        z-index: 1;
+        width: 40%;
+      }
     }
 
     p {
