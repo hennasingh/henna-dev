@@ -54,15 +54,15 @@ body {
       position: absolute;
       list-style-type: none;
       top: 5.5rem;
-      right: 0;
-      bottom: 0;
-      z-index: 100;
+      right: 20;
       padding: 0;
 
       li {
         padding: 0.8em 0;
         text-align: center;
         background-color: #fff;
+        margin-right: 2em;
+        padding: 1em;
 
         &:hover {
           background-color: pink;
@@ -81,6 +81,7 @@ body {
 
 .showMenu {
   display: block;
+  width: 90px;
 }
 .hideMenu {
   display: none;
@@ -146,8 +147,9 @@ body {
   background: url(./assets/subtle-prism.svg);
   background-position: center;
   padding: 0.6em;
-  height: 100vh;
+  height: 100%;
   display: flex;
+  margin-top: 2em;
 }
 
 .home-hero-content {
@@ -156,7 +158,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0.8em;
-  margin-top: 3em;
 
   div {
     display: flex;
@@ -178,20 +179,7 @@ body {
   letter-spacing: 3px;
   line-height: 1.4;
   text-transform: uppercase;
-
-  span {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      height: 0.2em;
-      width: 80%;
-      bottom: 0.1em;
-      z-index: 1;
-      background: #ea035e;
-    }
-  }
+  margin-top: 5em;
 }
 
 .hero-text {
@@ -291,17 +279,6 @@ section {
       letter-spacing: 2px;
       color: #333;
       text-transform: uppercase;
-      position: relative;
-
-      &:before {
-        position: absolute;
-        content: "";
-        height: 0.2em;
-        width: 80%;
-        bottom: 0.1em;
-        z-index: -1;
-        background: #ea035e;
-      }
     }
 
     p {
