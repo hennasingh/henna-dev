@@ -7,4 +7,4 @@
 - HTML/CSS
 - Firebase
 
-My version 2 is published at [hennasingh.dev](hennasingh.dev) and repo can be found [here](https://github.com/hennasingh/henna-dev-v2).
+My version 2 is published at [hennasingh.dev](https://hennasingh.dev) and repo can be found [here](https://github.com/hennasingh/henna-dev-v2).
